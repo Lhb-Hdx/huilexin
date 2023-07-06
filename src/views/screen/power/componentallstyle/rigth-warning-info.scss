@@ -1,0 +1,50 @@
+@import '@/views/screen/power/componentallstyle/index.scss';
+
+.container-warningInfo {
+    // height: 32%;
+    // height: vh(340);
+}
+
+
+.alarmtype {
+    display: flex;
+    padding-left: 15px;
+}
+
+.alarmtype .typebox {
+    flex: 1;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.alarmtype .typebox .type_no {
+    font-size: 24px;
+    margin: 15px auto 10px;
+}
+
+.alarmtype .typebox .type {
+    line-height: 25px;
+    background: #0A113B;
+    color: #99E5FF;
+}
+
+.text_color {
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(bottom, #00BFFF, #08F2F5, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// echars
+.alarm_echars {
+    width: 100%;
+    height: 64%;
+    overflow: hidden;
+    .echarts-boxs{
+        height: 100%;
+    }
+    #alarmEchartsBox {
+        width: 100%;
+        min-height: 200px;
+    }
+}

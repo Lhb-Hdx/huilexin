@@ -1,0 +1,27 @@
+.opmDetail{
+    .opmDetail-subtitle{
+        padding: 15px 0;
+        div{
+            color: #999;
+            margin-right: 50px;
+            font-size: 16px;
+        }
+    }
+    .opmDetail-col-right{
+        border-left: 2px solid #E0E0E0;
+        // height: 100vh;
+        min-height: 750px;
+    }
+    .opmDetail-info{
+        >div{
+            line-height: 35px;
+            display: flex;
+
+            .opmDetail-info-title{
+                width: 100px;
+                text-align: right;
+                font-weight: 600;
+            }
+        }
+    }
+}

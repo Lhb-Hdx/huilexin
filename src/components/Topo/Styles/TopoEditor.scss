@@ -1,0 +1,290 @@
+// 配置区域
+.config-content {
+  display: flex;
+
+  // 左侧列表
+  .config-content-left {
+    width: 15%;
+    margin-right: 10px;
+    background: #fff;
+    border: 1px solid #0145AB;
+    overflow-y: scroll;
+
+    .left-title {
+      display: flex;
+      justify-content: space-between;
+      color: #0145AB;
+      font-weight: bold;
+      padding: 10px;
+    }
+    .left-elements {
+      padding: 5px 0;
+      //overflow-y: scroll;
+      //height: calc(100% - 16px);
+      .elements-group-item {
+        padding: 5px 10px;
+        .group-item-header {
+          line-height: 35px;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .item-header-left {
+            display: flex;
+            align-items: center;
+            img {
+              width: 16px;
+              height: 16px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .elements-item {
+        padding: 10px 0;
+        font-size: 14px;
+        text-indent: 24px;
+      }
+    }
+  }
+
+  // 右侧配置区域
+  .config-content-right {
+    width: 20%;
+    overflow-y: scroll;
+    margin-left: 10px;
+    padding-right: 5px;
+    // 右侧属性组件
+    .config-content-right-component {
+      border: 1px solid #0145AB;
+      margin-bottom: 10px;
+
+      .config-group-title {
+        color: #ffffff;
+        font-weight: bold;
+        background: #0145AB;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        i {
+          cursor: pointer;
+        }
+      }
+
+      .config-group-main {
+        margin: 0 0 10px 0;
+
+        .dev-main-item {
+          height: 28px;
+          line-height: 28px;
+
+          .group-main-value {
+            display: flex;
+            align-items: center;
+
+            .select-device {
+              padding-right: 5px;
+            }
+          }
+        }
+
+        .group-main-item {
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          padding: 10px 10px 0 10px;
+
+          .group-main-title {
+            width: 35%;
+          }
+
+          .group-main-value {
+            width: 65%;
+
+            .el-select {
+              width: 100%;
+            }
+
+            .value-color-block {
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              margin-left: 5px;
+            }
+
+            .select-equipment {
+              font-size: 14px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .text-value {
+        height: 28px;
+      }
+
+      .input {
+        height: 28px;
+        line-height: 28px;
+        -webkit-appearance: none;
+        background-color: #FFFFFF;
+        background-image: none;
+        border-radius: 4px;
+        border: 1px solid #DCDFE6;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #606266;
+        display: inline-block;
+        font-size: inherit;
+        outline: none;
+        padding: 0 15px;
+        -webkit-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        width: 100%;
+      }
+
+      .input:focus {
+        outline: none;
+        border-color: #0145ab;
+      }
+
+      .input:hover {
+        border-color: #C0C4CC;
+      }
+
+      .input-group-tag {
+        background-color: #F5F7FA;
+        color: #909399;
+        vertical-align: middle;
+        display: table-cell;
+        position: relative;
+        border: 1px solid #DCDFE6;
+        border-radius: 4px;
+        padding: 0 20px;
+        white-space: nowrap;
+        border-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 28px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  // 中间配置区域
+  .config-content-main {
+    width: 85%;
+    // padding: 10px;
+    // overflow: auto;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #0145AB;
+
+    #topoMap {
+      position: absolute;
+    }
+
+    .content-main-box {
+      margin: 0 auto;
+      position: relative;
+
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .artwork {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .stretch {
+      background-size: 100% 100%;
+      background-repeat: repeat;
+    }
+
+    .tile {
+      background-size: contain;
+      background-repeat: repeat;
+    }
+
+    .config-el {
+      text-align: center;
+      background-size: 100% 100%;
+
+      .delete-el {
+        cursor: pointer;
+        position: absolute;
+        right: 2%;
+        top: 2%;
+      }
+
+      .config-el-title {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      img {
+        height: 100%;
+      }
+
+      input {
+        background: transparent;
+        width: 100%;
+        border: 0;
+      }
+    }
+  }
+
+  // 悬浮配置窗口
+  .topo-position-setting {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    // 链路类型样式
+    .line-type-map {
+      width: 200px;
+      border: 1px solid #e0e0e0;
+      background: #f5f5f5;
+      .map-title {
+        font-size: 16px;
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .map-main {
+        //padding: 10px 0;
+        .map-item {
+          font-size: 14px;
+          padding: 6px 10px;
+          .item-line {
+            width: 50%;
+          }
+        }
+        .active {
+          background: #bbcbe5;
+        }
+      }
+    }
+    // 节点分组
+    .group-map {}
+  }
+}
+
+// 右键菜单样式
+.conext-menu {
+  position: absolute;
+  width: 5%;
+  box-shadow: 0 0 15px 1px #ddd;
+  border-right: 5px;
+  .conext-menu {
+    font-size: 12px;
+    padding: 10px;
+    background: #fff;
+    width: 100%;
+  }
+}

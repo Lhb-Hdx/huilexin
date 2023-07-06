@@ -1,0 +1,801 @@
+// 公共重置样式
+
+// 宽高百分比
+.width-100 {
+  width: 100% !important;
+}
+.width-50 {
+  width: 50% !important;
+}
+.width-60 {
+  width: 60% !important;
+}
+.height-100 {
+  height: 100% !important;
+}
+
+// margin
+.margin-right-5 {
+  margin-right: 5px !important;
+}
+.margin-left-5 {
+  margin-left: 5px;
+}
+.margin-top-5 {
+  margin-top: 5px;
+}
+.margin-top-7 {
+  margin-top: 7px;
+}
+.margin-bottom-7 {
+  margin-bottom: 7px;
+}
+.margin-right-7 {
+  margin-right: 7px;
+}
+.margin-left-10 {
+  margin-left: 10px;
+}
+.margin-right-10 {
+  margin-right: 10px;
+}
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+.margin-15 {
+  margin: 15px;
+}
+.margin-top-15 {
+  margin-top: 15px;
+}
+.margin-top-10 {
+  margin-top: 10px;
+}
+.margin-left-15 {
+  margin-left: 15px;
+}
+.margin-right-15 {
+  margin-right: 15px;
+}
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.no-margin-right {
+  margin-right: 0 !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+.margin-right-7-5 {
+  margin-right: 7.5px;
+}
+.margin-bottom-7-5 {
+  margin-bottom: 7.5px;
+}
+.margin-left-7-5 {
+  margin-left: 7.5px;
+}
+
+.margin-right-22 {
+  margin-right: 22px;
+}
+
+// color
+.primary {
+  color: #136EE9 !important;
+}
+.danger {
+  color: #EB4C4C !important;
+}
+.success {
+  color: #00b285 !important;
+}
+.info {
+  color: #BCBCBC !important;
+}
+.warning {
+  color: #e6a23c !important;
+}
+.default {
+  color: #333333 !important;
+}
+.unset {
+  color: unset !important;
+}
+
+// border
+.no-border {
+  border: unset !important;
+}
+.primary-border {
+  border: 1px solid #0145ab !important;
+}
+
+// background
+.no-background {
+  background: transparent !important;
+}
+.background-while {
+  background: white;
+}
+
+// 鼠标样式
+.pointer {
+  cursor: pointer;
+}
+
+// 文字处理
+// 单行溢出省略号处理
+.overflow-text-a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left !important;
+}
+
+// flex
+.flexBox {
+  display: flex;
+}
+.align-item-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex1 {
+  flex: 1 !important;
+}
+.flex2 {
+  flex: 2 !important;
+}
+
+// fload
+.float-right {
+  float: right;
+}
+
+// inline && block
+.inline {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+
+// font
+.font-bold {
+  font-weight: bold;
+}
+.normal {
+  font-weight: normal !important;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-18 {
+  font-size: 18px;
+}
+
+// position
+.relative {
+  position: relative;
+}
+
+//flex以及padding margin定义
+.default-color,
+.default-bg {
+  color: #0145ab;
+}
+.flex {
+  display: flex !important;
+}
+.flex-wrap {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+.flex-h-center {
+  display: flex !important;
+  align-items: center !important;
+}
+.flex-v-center {
+  display: flex !important;
+  justify-content: center !important;
+}
+.flex-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.flex-v-between {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.flex-v-around {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+.flex-v-end {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+.flex-end {
+  display: flex !important;
+  align-items: flex-end !important;
+}
+.flex-h-between {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between !important;
+}
+.flex-row-reverse {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+}
+.flex-colunm {
+  flex-direction: column !important;
+}
+.flex-1{
+  flex: 1;
+}
+.text-center {
+  text-align: center !important;
+}
+
+.font-weight {
+  font-weight: bold !important;
+}
+.color-333{
+  color: #333;
+}
+.color-999{
+  color: #999;
+}
+.linear-1 {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+@for $size from 1 to 101 {
+  .font-#{$size} {
+    font-size: $size + px !important;
+  }
+  .m-#{$size} {
+    margin: $size + px !important;
+  }
+  .mx-#{$size} {
+    margin: 0 $size + px 0 $size + px !important;
+  }
+  .my-#{$size} {
+    margin: $size + px 0 $size + px 0 !important;
+  }
+  .mt-#{$size} {
+    margin-top: $size + px !important;
+  }
+  .mb-#{$size} {
+    margin-bottom: $size + px !important;
+  }
+  .ml-#{$size} {
+    margin-left: $size + px !important;
+  }
+  .mr-#{$size} {
+    margin-right: $size + px !important;
+  }
+  .p-#{$size} {
+    padding: $size + px !important;
+  }
+  .px-#{$size} {
+    padding-left: $size + px !important;
+    padding-right: $size + px !important;
+  }
+  .py-#{$size} {
+    padding-top: $size + px !important;
+    padding-bottom: $size + px !important;
+  }
+  .pt-#{$size} {
+    padding-top: $size + px !important;
+  }
+  .pb-#{$size} {
+    padding-bottom: $size + px !important;
+  }
+  .pl-#{$size} {
+    padding-left: $size + px !important;
+  }
+  .pr-#{$size} {
+    padding-right: $size + px !important;
+  }
+}
+
+/* 组件样式重置 START */
+// loading组件样式
+.el-loading-spinner {
+  .el-loading-text {
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .path {
+    stroke: #0145ab !important;
+  }
+}
+
+// 组件自带的文本域
+.nameInput .el-textarea__inner {
+  height: 300px !important;
+}
+
+// 将select宽度设置为100%
+.select-width-fill .el-select {
+  width: 100% !important;
+}
+
+.no-border .el-radio-button__inner {
+  border: none !important;
+}
+
+.drawer-menu-btn {
+  margin: 10px 20px;
+}
+
+.el-notification {
+  width: 330px !important;
+  height: auto !important;
+}
+
+.content-item {
+  span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// 解决 quill-editor 富文本在element ui中样式冲突造成工具栏样式错乱，在 quill-editor 标签中绑定此class
+.ql-editor-class {
+  box-sizing: border-box;
+  line-height: 1.42;
+  height: 100%;
+  outline: none;
+  padding: 0 !important;
+  tab-size: 4;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+// 重置mini按钮样式
+.reset-mini-button {
+  padding: 4px 7px;
+}
+
+// 图片组件插槽样式
+.el-image-sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #c0c4cc;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  background: #f5f7fa;
+}
+
+// 修改下拉框选项高度
+.el-select-dropdown__item {
+  height: 100%;
+}
+
+// 去除下拉框边框
+.no-select-border {
+  .el-input__inner {
+    border: none !important;
+  }
+}
+
+// 去除进度条内显的百分比
+.no-progress-bar-innerText .el-progress-bar__innerText {
+  display: none !important;
+}
+
+//运维标题下划线
+.under-line {
+  position: relative;
+  color: #003fa8;
+  padding: 10px 6px 10px 0;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #003fa8;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+// 修改弹窗内容区域
+.no-dialog-body {
+  // dialog标签添加no-dialog-body类，取消弹窗内容区域padding
+  .el-dialog__body {
+    padding: 0 !important;
+  }
+}
+
+.el-dialog__body {
+  padding: 20px !important;
+}
+
+// 修改表格展开区域
+.el-table__expanded-cell {
+  padding: 20px 10px 20px 50px !important;
+}
+
+// 修改上传组件对齐
+.el-upload {
+  text-align: left !important;
+}
+
+// 修改tab标签内容区域
+.no-pane-padding {
+  .el-tabs__content {
+    padding: 0 !important;
+  }
+}
+.el-tabs__nav-prev,
+.el-tabs__nav-next {
+  bottom: 0;
+}
+
+// IT告警弹窗的头部标题太高了，调整
+.alarm_pop {
+  .el-drawer__header {
+    margin-bottom: 0;
+    padding: 20px;
+    font-size: 14px;
+  }
+  .el-tag--dark {
+    border: none;
+  }
+}
+
+// 弹窗padding去除
+.dialog-no-padding {
+  .el-dialog__body {
+    padding: 0 !important;
+  }
+}
+
+// 修改分页
+.el-pagination {
+  padding: 10px !important;
+  //background: #ffffff !important;
+}
+
+// 修改tag标签行高
+.el-tag--medium {
+  line-height: 28px;
+}
+.el-tag--mini {
+  line-height: 20px;
+}
+
+// 修改树形
+.el-tree-node__content {
+  height: 35px;
+  line-height: 35px;
+}
+
+// 需要弹窗头部标题
+.el-dialog__header {
+  padding: 10px 15px;
+  background: #f8f8f8;
+}
+.el-dialog__headerbtn {
+  top: 13px;
+  right: 15px;
+}
+.el-dialog__title {
+  font-size: 14px;
+}
+.el-dialog__body {
+  padding: 10px 20px;
+}
+
+//告警
+.alarm_pop .el-drawer__header {
+  padding: 10px 20px;
+  background: #f8f8f8;
+}
+
+.el-drawer__header {
+  padding: 10px 20px;
+  background: #f8f8f8;
+}
+//IT监控硬盘使用
+
+.file-system {
+  .el-progress-bar__inner {
+    background: none;
+  }
+}
+
+// 修改表单行高
+.el-form-item--small .el-form-item__content .ql-formats span {
+  line-height: 0;
+}
+
+// 修改抽屉内容区域
+.el-drawer__body {
+  height: 100%;
+  padding-bottom: 80px;
+}
+
+// 动环右侧
+.el-card__header {
+  padding: 5px 15px;
+}
+
+/* 组件样式重置 END */
+
+.abow_dialog {
+  display: flex;
+  justify-content: center;
+  align-items: Center;
+  overflow: hidden;
+  .el-dialog {
+  margin: 0 auto !important;
+    height: 90%;
+    overflow: hidden;
+    .el-dialog__body {
+      position: absolute;
+      left: 0;
+      top: 54px;
+      bottom: 0;
+      right: 0;
+      padding: 0;
+      z-index: 1;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+// 重置工单 任务弹窗
+.taskDialog-analyse, .taskDialog-solution {
+  .card-body {
+    padding: 20px;
+  }
+  .el-card__body {
+    padding: 0 !important;
+  }
+}
+
+// 重置ip管理tab
+.ip-manage-tab {
+  .el-tabs__header {
+    background: #fff;
+    padding: 0 10px;
+  }
+}
+
+/* dialog body 重置 */
+.dialog-body-scroll {
+  .el-dialog {
+    overflow: hidden;
+    .el-dialog__body {
+      position: absolute;
+      left: 0;
+      top: 54px;
+      bottom: 70px;
+      right: 0;
+      padding: 0;
+      z-index: 1;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+    .el-dialog__footer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.dialog-not-footer {
+  .el-dialog__body {
+    height: calc(100% - 54px) !important;
+  }
+}
+
+.detail-port-echart {
+  .el-tabs__nav-scroll {
+    display: flex;
+    justify-content: center;
+  }
+  .el-tabs__nav-wrap::after {
+    display: none;
+  }
+}
+
+.chuck-box, .overview, .table-wrapper {
+  .el-icon-loading {
+    font-size: 30px;
+  }
+}
+
+.el-button {
+  .el-icon-loading {
+    font-size: unset !important;
+  }
+}
+
+// 表单星标居右
+.el-form-item__label {
+  position: relative;
+}
+.el-form-item.is-required:not(.is-no-asterisk) > .el-form-item__label:before, .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap > .el-form-item__label:before {
+  position: absolute;
+  right: 0;
+}
+
+// 表单文字居中
+// <el-form-item class="label-text-left" />
+.label-text-left {
+  .el-form-item__label {
+    text-align: left !important;
+    width: auto !important;
+    margin-left: 20px;
+  }
+}
+
+// 修改抽屉标题 下边距太高
+.el-drawer__header {
+  margin-bottom: 0;
+  padding: 20px;
+  font-size: 14px;
+}
+
+// 将按钮转换为块级
+.block-button {
+  display: block;
+  margin: 0 0 5px 0 !important;
+}
+
+.none-radio-label {
+  .el-radio__label {
+    display: none;
+  }
+}
+
+// dialog公共样式
+.el-dialog {
+  .dialog-body {
+    height: 100% !important;
+  }
+}
+
+.page-header {
+  padding: 10px;
+}
+
+// 修改自动化运维 分析结果表达式表单背景颜色
+.opm-expression-form {
+  input {
+    background: #000;
+    border-color: #2f3033;
+    color: #fff;
+  }
+}
+
+// 拓扑mini地图样式修改
+.topo-mini-map {
+  /deep/ .g6-minimap {
+    position: static !important;
+  }
+}
+
+// 仪表盘loading
+.dashboard-box-item {
+  .el-loading-mask {
+    z-index: 0 !important;
+  }
+}
+
+// 输入框和搜索按钮在一起
+.search-input-group {
+  display: flex;
+  input {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  button {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+}
+
+// 隐藏表格多选择头部选择框
+.has-gutter{
+  .el-table__header-wrapper {
+    .el-checkbox{
+      display: none;
+    }
+  }
+}
+
+.fault-detail-btns {
+  .el-button {
+    margin-left: 0 !important;
+    margin-bottom: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+
+.task-template-select-script {
+  .el-transfer-panel__body:first-of-type {
+    .el-checkbox-group {
+      height: 206px !important;
+    }
+  }
+}
+
+.capacity-item .el-progress__text {
+  color: #08F2F5 !important;
+  font-size: 20px !important;
+}
+
+/deep/ .el-table {
+  tr th,
+  tr td {
+    border-right: none;
+  }
+}
+
+.scheduling-screen {
+  .el-input__inner {
+    background: transparent !important;
+    border-color: #99E5FF;
+    color: #99E5FF;
+  }
+  .el-icon-arrow-up:before {
+    color: #99E5FF;
+  }
+  input::-webkit-input-placeholder{
+    color:#99E5FF;
+  }
+  input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #99E5FF;
+  }
+  input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #99E5FF;
+  }
+  input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color: #99E5FF;
+  }
+}

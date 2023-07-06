@@ -1,0 +1,150 @@
+
+// 大屏自适应计算
+//默认设计稿的宽度
+$designWidth:1920;
+//默认设计稿的高度
+$designHeight:1080;
+
+//px转为vw的函数
+@function vw($px) {
+@return ($px / $designWidth) * 100vw;
+}
+
+//px转为vh的函数
+@function vh($px) { 
+@return ($px / $designHeight) * 100vh;
+}
+
+$remfontSize:16;
+
+@function remFS($px){
+  @return ($px / $remfontSize) * 1rem;
+}
+
+
+// power index
+.monitor-container {
+  --default-color: #082949;
+  background: #05052C url(/image/screen/new-bg.png) no-repeat 50% top;
+  // min-height: 100%;
+  // min-height: calc(100% - 130px);
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  transition: all 0.5s;
+  color: #fff;
+  font-size: 14px;
+  // font-size: remFS(14);
+
+  .content-container {
+    overflow: 0 auto;
+    font-size: 14px;
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", 宋体, sans-serif;
+    margin: 20px;
+    position: relative;
+    // height: calc(100vh - 130px);
+    // height: 100vh;
+
+    .side-left {
+      width: 22.5%;
+      height: 100%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .center-main {
+        width: 55%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 30px;
+      .icolist {
+        // width: 100%;
+        display: flex;
+        padding-bottom: 30px;
+        text-align: center;
+        background: url(/image/screen/icobox_bg.png) no-repeat 50% bottom;
+      }
+    }
+    .side-right {
+        width: 22.5%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+      }
+   
+  }
+}
+
+
+// 头部标题
+.com_title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: url(/image/screen/title_bg.png) no-repeat 0 0;
+}
+
+.com_title .span_left {
+  float: left;
+  width: 50%;
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #99E5FF;
+}
+
+.com_title .span_right {
+  float: right;
+  width: 40%;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.com_title .sel_data {
+  padding-right: 0;
+  white-space: nowrap
+}
+
+.com_title .sel_data a:link,
+.com_title .sel_data a:visited {
+  // float: left;
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  color: #cccccc;
+}
+
+.com_title .sel_data a:hover,
+.com_title .sel_data a.a_on {
+  color: #99E5FF;
+}
+
+.com_title .sel_data em {
+  float: left;
+  color: #cccccc;
+  margin: 0 7px;
+}
+
+.com_title .span_right a.setflow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(/image/screen/ico_set.png) no-repeat 0 0;
+}
+
+// public
+a {
+  text-decoration: none;
+}
+
+.m_t15 {
+    margin-top: 15px;
+}
+
+.text_color {
+  font-weight: bold;
+  background-image: -webkit-linear-gradient(bottom, #00BFFF, #08F2F5, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

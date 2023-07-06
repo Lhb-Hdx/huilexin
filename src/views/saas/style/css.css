@@ -1,0 +1,152 @@
+.main.saas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.saas.items .el-icon-edit,
+.saas.items .el-icon-check {
+  text-align: right;
+  cursor: pointer;
+}
+
+.saas.items .el-icon-edit:hover,
+.saas.items .el-icon-check:hover {
+  font-weight: bold;
+}
+
+.saas.items .lbl {
+  font-weight: bold;
+  width: 80px;
+}
+
+.saas.items .lbl::after {
+  content: ":";
+}
+
+.saas.items .item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.saas.items .item .val {
+  color: #555;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 80px);
+}
+
+.saas.items .line {
+  position: relative;
+  margin: 10px 0;
+}
+
+.saas.items .line .lbl {
+  position: absolute;
+}
+
+.saas.items .line .txt {
+  padding-left: 80px;
+}
+
+.saas.items .divide {
+  text-align: center;
+  margin: 30px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.saas.items .divide .title {
+  background: #fff;
+  z-index: 100;
+  display: inline;
+  padding: 0 30px;
+}
+
+.saas.items .divide::after {
+  content: "";
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 6px;
+  left: 30px;
+  right: 30px;
+  z-index: 2;
+}
+
+.saas.items .template > div {
+  width: 100%;
+  min-height: 16px;
+}
+
+.mbody {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items {
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+}
+
+.items .name {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.items.short {
+  height: 300px;
+}
+
+.drawer-wrp {
+  padding: 0 20px;
+}
+
+.wapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wapper .header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding-top: 20px;
+}
+
+.wapper .header .search {
+  width: 250px;
+}
+
+.application {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  width: 200px;
+  background: #fff;
+}
+
+.application > div {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.application > div.activi, .application > div:hover {
+  background: #f7f7f7;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding-left: calc(200px + 20px);
+  background: #fff;
+}

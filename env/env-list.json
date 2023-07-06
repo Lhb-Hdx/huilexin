@@ -1,0 +1,50 @@
+[
+  {
+    "key": "iot",
+    "name": "IT智能运维管理系统 .net 环境",
+    "build": {
+      "envFilePath": "build/.env.iot",
+      "envTmpFilePath": "build/.env.tmp"
+    },
+    "dev": {
+      "envFilePath": "dev/.env.iot",
+      "envTmpFilePath": "dev/.env.tmp"
+    }
+  },
+  {
+    "key": "iot.com",
+    "name": "IT智能运维管理系统 .com 环境",
+    "build": {
+      "envFilePath": "build/.env.iot.com",
+      "envTmpFilePath": "build/.env.tmp"
+    },
+    "dev": {
+      "envFilePath": "dev/.env.iot.com",
+      "envTmpFilePath": "dev/.env.tmp"
+    }
+  },
+  {
+    "key": "pyyly",
+    "name": "番禺医疗云",
+    "build": {
+      "envFilePath": "build/.env.pyyly",
+      "envTmpFilePath": "build/.env.tmp"
+    },
+    "dev": {
+      "envFilePath": "dev/.env.pyyly",
+      "envTmpFilePath": "dev/.env.tmp"
+    }
+  },
+  {
+    "key": "pydh",
+    "name": "番禺动环",
+    "build": {
+      "envFilePath": "build/.env.pydh",
+      "envTmpFilePath": "build/.env.tmp"
+    },
+    "dev": {
+      "envFilePath": "dev/.env.pydh",
+      "envTmpFilePath": "dev/.env.tmp"
+    }
+  }
+]

@@ -1,0 +1,146 @@
+.full-main {
+  height: 100%;
+  position: relative;
+  overflow: scroll;
+
+  .full-left {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: rgb(233, 236, 243);
+
+    .full-left-header {
+      height: 40px;
+      line-height: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .full-left-header-title {
+      font-weight: bold;
+      padding-left: 10px;
+      font-size: 14px;
+    }
+
+    .full-left-header-right-icon {
+      width: 40px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .el-scrollbar {
+      height: calc(100% - 40px);
+    }
+
+    .full-main-scrollbar-wrapper {
+      overflow-x: hidden !important;
+    }
+  }
+  .full-right {
+    height: 100%;
+    margin-left: 200px;
+    overflow: auto;
+    position: relative;
+    .tooltip-group, .host-tooltip {
+      position: absolute;
+    }
+    .g6-component-tooltip {
+      display: inline-block;
+      visibility: visible;
+      font-size: 14px;
+      .host-name {
+        color: #0045AB;
+      }
+      .host-ip {
+        color: #878787;
+      }
+      .item-name{
+        display: inline-block;
+        width: 72px !important;
+      }
+    }
+
+    .topo-position-setting {
+      position: absolute;
+      right: 10px;
+      .line-type-map {
+        width: 200px;
+        border: 1px solid #e0e0e0;
+        background: #FFFFFF;
+        .map-title {
+          font-size: 14px;
+          padding: 10px;
+          border-bottom: 1px solid #e0e0e0;
+        }
+        .map-main {
+          padding: 10px 10px 0 10px;
+          .map-item {
+            font-size: 14px;
+            .item-line {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.link-host-detail {
+  .host-detail-name {
+    color: #333333;
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  .host-info {
+    display: flex;
+    align-items: center;
+    .host-ip {
+      color: #878787;
+    }
+  }
+}
+.topo-header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  //margin: 10px;
+  .topo-header-left {
+    font-size: 16px;
+    line-height: 45px;
+    display: flex;
+    align-items: baseline;
+    .status-item {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-left: 15px;
+      color: #999999;
+    }
+  }
+  .topo-header-static {
+    background: #FFFFBF;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+    .static-item {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      .static-item-title {
+        color: #999999;
+      }
+    }
+  }
+}
+.none-topo-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .none-topo-alert {
+    width: 30%;
+  }
+}

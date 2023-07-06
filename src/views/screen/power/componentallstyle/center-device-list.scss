@@ -1,0 +1,103 @@
+@import '@/views/screen/power/componentallstyle/index.scss';
+
+.item-percentage {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .item-percentage-tag {
+    background: #1b3883;
+    height: 11px;
+    margin: 0 1px;
+  }
+
+  .light {
+    background: #a9e3fc;
+  }
+}
+
+.icolist .icomain {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.icolist .icomain .icobg {
+  height: 88px;
+  margin: 0 auto;
+  background: url(/image/screen/power/ico_bg.png) no-repeat;
+  background-size: 100%;
+
+}
+
+// .icolist ::v-deep .icomain .icobg img {
+//   animation: float 1s infinite ease-in-out alternate !important;
+// }
+
+#animation{
+  animation: float 1s infinite ease-in-out alternate !important;
+}
+#animation1{
+  animation: float 1.003s infinite ease-in-out alternate !important;
+}
+#animation2{
+  animation: float 1.002s infinite ease-in-out alternate !important;
+}
+#animation3{
+  animation: float 1.033s infinite ease-in-out alternate !important;
+}
+#animation4{
+  animation: float 1.03s infinite ease-in-out alternate !important;
+}
+#animation5{
+  animation: float 1.022s infinite ease-in-out alternate !important;
+}
+#animation6{
+  animation: float 1.02s infinite ease-in-out alternate !important;
+}
+#animation7{
+  animation: float 1.001s infinite ease-in-out alternate !important;
+}
+#animation8{
+  animation: float 1.01s infinite ease-in-out alternate !important;
+}
+
+.icolist ::v-deep .icomain .icobg .fs {
+  animation-delay: .3s
+}
+
+.icolist ::v-deep .icomain .ico_name {
+  width: 100%;
+  line-height: 25px;
+  background: #0A113B;
+  color: #99E5FF;
+  font-size: 14px;
+}
+
+.icolist .icomain .ico_no {
+  font-size: 24px;
+  margin: 10px auto;
+}
+
+// for 动画
+.list-move,
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s infinite ease-in-out alternate;
+}
+
+// 刚进入|最后离开的动画
+.list-enter,
+.list-leave-to {
+  transform: translateY(10px);
+}
+.list-leave-active {
+  position: absolute;
+}
+
+
+@keyframes float {
+  100% {
+    transform: translateY(10px);
+  }
+}

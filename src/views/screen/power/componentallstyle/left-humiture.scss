@@ -1,0 +1,171 @@
+@import '@/views/screen/power/componentallstyle/index.scss';
+
+
+.container-humiture {
+  display: flex;
+  flex-direction: column;
+  .thmain {
+    overflow: hidden;
+  }
+  .temperature_sensor{
+    flex: 1;
+    overflow-y: auto;
+    /* 滚动条样式 */
+    &::-webkit-scrollbar {
+      background: #3D9FE9;
+      border-radius:5px;
+    }
+    /* 滚动条轨道 */
+    &::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background: #123788;
+    }
+
+    /* 滚动条上的滚动滑块 */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: #3D9FE9;
+    }
+    .sensor_item{
+      margin-bottom: 1px;
+      padding: 0px 15px;
+      line-height: 26px;
+      background-color: #09113b;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      .temp_title{
+        flex: 1;
+        padding: 4px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        overflow: hidden;
+        #title{
+          flex: 4;
+          white-space:nowrap;
+          overflow: hidden;
+          text-overflow:ellipsis;
+        }
+        #icon{
+          flex: 1;
+          padding: 0 10px;
+        }
+      }
+      .temp_number{
+        flex: 1;
+        display: flex;
+        align-items: baseline;
+        #temp{
+          flex: 1;
+          padding: 4px 0;
+          text-align: center;
+          background-color: #0e1e59;
+        }
+        #tempWing{
+          flex: 1;
+          padding: 4px 0;
+          color: #ff4d4d;
+          text-align: center;
+          background-color: #0e1e59;
+        }
+        #percent{
+          flex: 1;
+          padding: 4px 0;
+          text-align: center;
+        }
+        #percentWing{
+          color: #ff4d4d;
+          flex: 1;
+          padding: 4px 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .thbox {
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+  }
+
+  .thbox .thname {
+    float: left;
+    width: 100%;
+    line-height: 20px;
+    padding: 15px 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .thbox .th_text {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 24px;
+  }
+
+  .text_color {
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(bottom, #00BFFF, #08F2F5, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .thbox .th_text em {
+    font-size: 12px;
+  }
+
+  .thbox .th_hl dl {
+    float: left;
+    width: 50%;
+    margin: 0;
+  }
+
+  .thbox .th_hl dt {
+    line-height: 30px;
+    color: #cccccc;
+  }
+
+  .thbox .th_hl dd {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 0;
+    margin: 0;
+  }
+}
+
+.percentage {
+  display: flex;
+  width: 84%;
+  justify-content: space-between;
+
+  .percentage_item {
+    background: #1b3883;
+    height: 12px;
+    margin: 0 1px;
+  }
+
+  .indoor-light {
+    background: linear-gradient(to left, #3cc000, #9cff00);
+  }
+
+}
+
+.percentage2 {
+  display: flex;
+  width: 84%;
+  justify-content: space-between;
+
+  .percentage_item2 {
+    background: #1b3883;
+    height: 12px;
+    margin: 0 1px;
+  }
+
+  .outdoor-light {
+    background: linear-gradient(to right, blue, #0093de);
+  }
+}

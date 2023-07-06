@@ -1,0 +1,11 @@
+直接根据env环境运行
+开发环境：npm run dev
+打包：npm run build:prod
+
+iot环境：
+开发环境：npm run envIOTBuildDev
+打包：npm run envIOTBuild
+
+com环境
+开发环境：npm run envIOTCOMBuildDev
+打包：npm run envIOTCOMBuild
